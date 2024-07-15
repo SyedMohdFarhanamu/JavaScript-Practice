@@ -148,4 +148,4 @@ console.log(x , y);
 let x2 = 3;
 const y2 = ++x2;
 console.log(x2 , y2);
-// x2 is 4n; y2 is 3n
+// x2 is 4; y2 is 4
