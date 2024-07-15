@@ -27,12 +27,12 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof score);
-console.log(typeof scoreValue);
-console.log(typeof isLoggedIn);
-console.log(typeof outsideTemp);
-console.log(typeof userEmail);
-console.log(typeof anotherId);
-console.log(typeof bigNumber);
-console.log(typeof heros);
-console.log(typeof myFunction);
+console.log(typeof score);  // number
+console.log(typeof scoreValue);  //  number
+console.log(typeof isLoggedIn);  //  boolean
+console.log(typeof outsideTemp);  //  object
+console.log(typeof userEmail);  //  undefined
+console.log(typeof anotherId);  //  symbol
+console.log(typeof bigNumber);  //  bigint
+console.log(typeof heros);  //  object
+console.log(typeof myFunction);  //  function-object
