@@ -86,5 +86,66 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+// ********************OPERATOR***********************************
+// ****************OPERATIONS******************************
+
+let value = 3
+let negvalue = -value
+// console.log(negvalue);  // -3
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2/3);
+// console.log(2**2);
+// console.log(5%2);
+
+let str1 = "hello"
+let str2 = " hitesh"
+
+let str3 = str1 + str2
+// console.log(str3);
+
+// This one is not right way to code
+// 1.
+
+// console.log("1" + 2); // 12
+// console.log(1 + "2");  //  12
+// console.log("1" + 2 + 2);  //  122 --> if first one is string then take rest of all as string.
+// console.log(1 + 2 + "2");  //  32 --> if first one is integer then take rest of all as integer.
+
+// console.log(typeof "1" + 2); // string2
+// console.log(typeof 1 + "2");  //  number2
+// console.log(typeof "1" + 2 + 2);  //  string22
+// console.log(typeof 1 + 2 + "2");  //  number22
+
+// 2.
+// console.log( (3 + 4) * 5 % 3);  // use parenthesis for mathematical operation 
+
+// 3.
+// console.log(true);  //  true
+// console.log(+true);  // 1
+// console.log(+"");  // 0
+
+
+// 4. 
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2  //  Not right way 
+
+// If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
+
+// If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.
+
+let x = 3;
+const y = x++;
+console.log(x , y);
+// x is 4; y is 3
+
+let x2 = 3;
+const y2 = ++x2;
+console.log(x2 , y2);
+// x2 is 4n; y2 is 3n
