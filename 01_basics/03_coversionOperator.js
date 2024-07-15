@@ -109,7 +109,7 @@ let str2 = " hitesh"
 let str3 = str1 + str2
 // console.log(str3);
 
-// This one is not right way to code
+// This one is not right way to code so code Must be READABLE.
 // 1.
 
 // console.log("1" + 2); // 12
@@ -134,7 +134,7 @@ let str3 = str1 + str2
 // 4. 
 let num1, num2, num3
 
-num1 = num2 = num3 = 2 + 2  //  Not right way 
+num1 = num2 = num3 = 2 + 2  //  Not right way , NOT READABLE
 
 // If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
 
