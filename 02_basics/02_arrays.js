@@ -26,7 +26,7 @@ console.log(Array.isArray("Hitesh")) // The Array.isArray() static method determ
 console.log(Array.from("Hitesh"))  // The Array.from() static method creates a new, shallow-copied Array instance from an iterable or array-like object.
 
 console.log(Array.from({name: "hitesh"})) // interesting
-
+// directly pass object but r/w empty array.
 let score1 = 100
 let score2 = 200
 let score3 = 300
