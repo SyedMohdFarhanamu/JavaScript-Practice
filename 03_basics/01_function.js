@@ -74,4 +74,53 @@ function loginUserMessage(username = "Syed Mohd Farhan"){   // deos not go in co
     }
     return `${username} just logged in`
 }
-console.log(loginUserMessage())
+// console.log(loginUserMessage())   //   Syed Mohd Farhan just logged in
+
+
+// SHOPPING CART
+// ... (REST OPERATOR) in function --> all value conevrt to in array
+// 1st
+function CalculateCartPrice(...num1){
+    return num1
+}
+console.log(CalculateCartPrice(200,300,400)); ///  [ 200, 300, 400 ]
+
+//2nd
+function cartPrice(val1,val2,...num1){
+    return num1
+}
+console.log(cartPrice(100,200,300,500,1000,2000,5000));  //  [ 300, 500, 1000, 2000, 5000 ]
+
+
+// Pass object into the function
+
+const user = {
+    username: "hitesh",
+    prices: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and Price is ${anyobject.prices}`);
+    
+}
+handleObject(user)  //  Username is hitesh and Price is 199
+handleObject(
+    {
+        username: "Syed Mohd Farhan",
+        prices: 388
+    }
+)                   //  Username is Syed Mohd Farhan and Price is 388
+
+
+// Pass Array into the function
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));  //  400
+console.log(returnSecondValue([200, 300, 500, 1000]));  //  300
+
+
+
