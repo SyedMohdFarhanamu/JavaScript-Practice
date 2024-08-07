@@ -53,7 +53,7 @@ const ob3 = {...ob1, ...ob2}
 
 //  ACCESS KEYS AND VALUE FROM OBJECT IN ARRAYS FORM.
 
-console.log(tinderuser);  //  { id: '123abc', name: 'Sammy', isLoggedIn: false }
+// console.log(tinderuser);  //  { id: '123abc', name: 'Sammy', isLoggedIn: false }
 
 // console.log(Object.keys(tinderuser));  //  [ 'id', 'name', 'isLoggedIn' ]  R/W IN ARRAYS FORM
 // console.log(Object.values(tinderuser));  //  [ '123abc', 'Sammy', false ]  R/W IN ARRAYS FORM
@@ -82,13 +82,70 @@ const users = [
 
 ]
 
-console.log(users[0].email);
-  
+// console.log(users[0].email);  //  h1@gmail.com
+
+
+// DESTRUCTURING OF OBJECT
+//The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor} = course
+console.log(courseInstructor);  //  hitesh
+// 2nd way to destructure in short name
+const {courseInstructor : instructor} = course
+console.log(instructor);  //  hitesh
+
+//API (Application Programming Interface.)
+
+// A Web API is a developer's dream.
+
+// It can extend the functionality of the browser
+// It can greatly simplify complex functions
+// It can provide easy syntax to complex code
+
+// The most common formats found in modern APIs are JSON (JavaScript Object Notation)
+    //   JSON
+    // Many APIs have adopted the newer JSON representation because it's built on the popular JavaScript programming language, which is ubiquitous on the web and usable on both the front- and back-end of a web app or service. JSON is a very simple format that is expressed using a combination of punctuation marks and real, readable words. Each object in JSON—set off between curly brackets ({})—contains two pieces, keys and values, each of which are contained within quotation marks ("") and separated by a colon (:). 
 
 
 
+    // Keys represent an attribute about the object being described and specify one or more corresponding values. For example, if a pizza order is an object, its attributes (keys) would be crust type, toppings, and order status. The selections for these attributes/keys would be options (values) like thick crust, pepperoni, and out for delivery, respectively.
 
 
+
+    // Let's see how this pizza order could look in JSON:
+
+    // {
+    //     "crust": "original",
+    //     "toppings": ["chees", "pepperoni", "garlic"],
+    //     "status": "cooking"
+    // }
+
+    // BOTH KEYS AND VALUE ARE IN STRING FORMAT EXCEPT NUMBER AND BOOLEAN.
+
+    // In the JSON example above, the keys are the words on the left of the colons: toppings, crust, and status. They tell us what attributes the pizza order contains. The values are the parts to the right of the colons. These are the actual details of the order.
+
+
+    //  The key terms we learned were:
+
+        // JSON: JavaScript Object Notation
+        // Object: A thing or noun (person, pizza order...)
+        // Key: An attribute about an object (color, toppings...)
+        // Value: The value of an attribute (blue, pepperoni...)
+
+// SOME TIME API NOT LIKE OBJECT FORM THERE ARE ARRAY FORMAT'S API LIKE:-
+//    [
+//         {},
+//         {},
+//         {}
+//    ]
 
 
 
