@@ -5,7 +5,7 @@
   // 2. Immediately Excute
   // Syntax ->  ()()    1st parenthesis is for func defination
   // 2nd parenthesis is for excution
-
+// 1st
 (function chai(){
     console.log("DB CONNECTED");  //  DB CONNECTED
     
