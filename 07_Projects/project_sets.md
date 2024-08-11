@@ -10,5 +10,4 @@
 
 ``` javascript
 console.log("hitesh")
-
 ```
