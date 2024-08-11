@@ -37,7 +37,7 @@ buttons.forEach(function (button) {
 
 ## Project 2 Solution
 
-```
+``` javascript
 const form = document.querySelector('form');
 // console.log(form)
 // this usecase will give you empty
