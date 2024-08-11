@@ -1,0 +1,57 @@
+<!-- Edit and Remove DOM Element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    
+</body>
+
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerText = `${langName}`
+        document.querySelector(".language").appendChild(li)
+    }
+
+    addLanguage("Python")  // This is not optimise code  due to innerText
+    addLanguage("Java")  // b/c it is traverse from root to child node in every time 
+    addLanguage("C++")
+
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(li)
+
+    }
+
+    addOptiLanguage("Kotlin")  // This is Optimise code due to appendChild()
+
+// Edit
+
+    const secondLanguge = document.querySelector("li:nth-child(2)")
+    // console.log(secondLanguge);
+    // secondLanguge.innerHTML = "Mojo"  //  This is not Optomise
+    const newLi = document.createElement("li")
+    newLi.textContent = "mojo"
+    secondLanguge.replaceWith(newLi)
+
+// Edit
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>TypeSript</li>" 
+
+// Remove
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+</html>
