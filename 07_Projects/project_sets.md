@@ -44,7 +44,7 @@ const form = document.querySelector('form');
 // const height = parseInt(document.querySelector("#height").value)
 // console.log(height)
 form.addEventListener('submit', function (e) {
-  e.preventDefault();
+  e.preventDefault();  // this is "form" so value goes to the server but we want to stop so use preventDefault() method.
 
   const height = parseInt(document.querySelector('#height').value);
   const weight = parseInt(document.querySelector('#weight').value);
