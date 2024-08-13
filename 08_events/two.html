@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+    // setTimeout()
+    // 1.
+    // setTimeout(function(){
+    //     console.log("hitesh")
+    // },5000)
+
+    // 2.
+    // const sayHitesh = function(){
+    //     console.log("hitesh")
+    // }
+    // setTimeout(sayHitesh,5000)
+
+// change h1 text
+    const changeText = function(){
+        document.querySelector("h1").innerHTML = "Best JS Series"
+    }
+    // setTimeout(changeText,5000)
+
+// to stop the timeout of an event use clearTimeout()
+    const changeMe = setTimeout(changeText,5000)
+    document.querySelector("#stop").addEventListener("click" , function(){
+        clearTimeout(changeMe)
+        // clearTimeout(changeMe)
+        console.log("Stopped")
+    })
+</script>
+</html>
