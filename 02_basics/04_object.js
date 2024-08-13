@@ -86,7 +86,8 @@ const users = [
 
 
 // DESTRUCTURING OF OBJECT
-//The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+//The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties 
+//from objects, into distinct variables.
 
 const course = {
     coursename: "js in hindi",
@@ -113,16 +114,16 @@ console.log(instructor);  //  hitesh
 // The most common formats found in modern APIs are JSON (JavaScript Object Notation)
     //   JSON
     // Many APIs have adopted the newer JSON representation because it's built on the popular JavaScript programming language, 
-       which is ubiquitous on the web and usable on both the front- and back-end of a web app or service. JSON is a very simple format 
-       that is expressed using a combination of punctuation marks and real, readable words. Each object in JSON—set off between curly 
-       brackets ({})—contains two pieces, keys and values, each of which are contained within quotation marks ("") and separated by 
-       a colon (:). 
+    // which is ubiquitous on the web and usable on both the front- and back-end of a web app or service. JSON is a very simple format 
+    // that is expressed using a combination of punctuation marks and real, readable words. Each object in JSON—set off between curly 
+    // brackets ({})—contains two pieces, keys and values, each of which are contained within quotation marks ("") and separated by 
+    // a colon (:). 
 
 
 
     // Keys represent an attribute about the object being described and specify one or more corresponding values. For example, if 
-       a pizza order is an object, its attributes (keys) would be crust type, toppings, and order status. The selections for these 
-       attributes/keys would be options (values) like thick crust, pepperoni, and out for delivery, respectively.
+    // a pizza order is an object, its attributes (keys) would be crust type, toppings, and order status. The selections for these 
+    // attributes/keys would be options (values) like thick crust, pepperoni, and out for delivery, respectively.
 
 
 
@@ -137,7 +138,7 @@ console.log(instructor);  //  hitesh
     // BOTH KEYS AND VALUE ARE IN STRING FORMAT EXCEPT NUMBER AND BOOLEAN.
 
     // In the JSON example above, the keys are the words on the left of the colons: toppings, crust, and status. They tell us what 
-       attributes the pizza order contains. The values are the parts to the right of the colons. These are the actual details of the 
+    // attributes the pizza order contains. The values are the parts to the right of the colons. These are the actual details of the 
        order.
 
 
