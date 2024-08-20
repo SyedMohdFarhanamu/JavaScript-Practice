@@ -6,9 +6,9 @@
 - collection of properties and methods
 - toLowerCase
 
-## why use OOP
+## Why use OOP
 
-## parts of OOP
+## Parts of OOP
 Object literal 
 
 - Constructor function
@@ -17,7 +17,7 @@ Object literal
 - Instances (new, this)
 
 
-## 4 pillars
+## 4 Pillars
 - Abstraction
 - Encapsulation
 - Inheritance
