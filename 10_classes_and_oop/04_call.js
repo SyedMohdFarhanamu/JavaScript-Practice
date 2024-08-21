@@ -5,7 +5,7 @@ function SetUsername(username){
 }
 
 function createUser(username, email, password){
-    SetUsername.call(this, username)
+    SetUsername.call(this, username)// To call outer func with the help of "call method" and by "this" create own context
    
     this.email = email
     this.password = password
