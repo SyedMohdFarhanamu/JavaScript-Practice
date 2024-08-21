@@ -25,4 +25,4 @@ class Teacher extends User {
 const iphone = new Teacher("iphone", "i@phone.com")
 // console.log(iphone.createId());  //  TypeError: iphone.createId is not a function
 
-console.log(User.createId())   //  Static properties cannot be directly accessed on instances of the class. Instead, they're accessed on the class itself.
+console.log(User.createId())   // o/p -> 123  Static properties cannot be directly accessed on instances of the class. Instead, they're accessed on the class itself.
