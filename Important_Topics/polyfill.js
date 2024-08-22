@@ -9,27 +9,51 @@ let name = {
     lastname: "Kholi"
 }
 
-let printName = function(hometown,state,country){
-    console.log(this.firstname + " " + this.lastname + " , " + hometown + " , " + state + " , "+ country)
+let printName = function(hometown){
+    console.log(this.firstname + " " + this.lastname + " , " + hometown)
 }
 // below one is done by bind() function
 let printMyName = printName.bind(name,"Gorakhpur")
-printMyName("Uttar Pradesh", "India")
+printMyName()  // Virat Kholi , Gorakhpur
 
 // here we create own bind() that is Polyfill 
 Function.prototype.mybind = function(...args){
     let obj = this   // here 'this' --> reference of printName function.
     params = args.slice(1) // remove the first element from the list. return in array form
-    return function(...args2){   // return function --> printMyName2
-        obj.apply(args[0],[...params,...args2])
+    return function(){   // return function --> printMyName2
+        obj.apply(args[0],params)
     }
 }
 let printMyName2 = printName.mybind(name,"Gorakhpur")
-printMyName2("Uttar Pradesh", "India")
+printMyName2()  // Virat Kholi , Gorakhpur
 
-
-//  -------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------
 // 2nd way
+
+// let name = {
+//     firstname:"Virat",
+//     lastname: "Kholi"
+// }
+
+// let printName = function(hometown,state,country){
+//     console.log(this.firstname + " " + this.lastname + " , " + hometown + " , " + state + " , "+ country)
+// }
+// // below one is done by bind() function
+// let printMyName = printName.bind(name,"Gorakhpur")
+// printMyName("Uttar Pradesh", "India")  // Virat Kholi , Gorakhpur , Uttar Pradesh , India
+
+// // here we create own bind() that is Polyfill 
+// Function.prototype.mybind = function(...args){
+//     let obj = this   // here 'this' --> reference of printName function.
+//     params = args.slice(1) // remove the first element from the list. return in array form
+//     return function(...args2){   // return function --> printMyName2
+//         obj.apply(args[0],[...params,...args2])
+//     }
+// }
+// let printMyName2 = printName.mybind(name,"Gorakhpur")
+// printMyName2("Uttar Pradesh", "India")  // Virat Kholi , Gorakhpur , Uttar Pradesh , India
+//  -------------------------------------------------------------------------------------------------------------
+// 3rd way
 
 
 // let name = {
@@ -42,7 +66,7 @@ printMyName2("Uttar Pradesh", "India")
 // }
 // // below one is done by bind() function
 // let printMyName = printName.bind(name,"Gorakhpur","Uttar Pradesh", "India")
-// printMyName()
+// printMyName()  // Virat Kholi , Gorakhpur , Uttar Pradesh , India
 
 // // here we create own bind() that is Polyfill 
 // Function.prototype.mybind = function(...args){
@@ -53,4 +77,4 @@ printMyName2("Uttar Pradesh", "India")
 //     }
 // }
 // let printMyName2 = printName.mybind(name,"Gorakhpur","Uttar Pradesh", "India")
-// printMyName2()
+// printMyName2() // Virat Kholi , Gorakhpur , Uttar Pradesh , India
