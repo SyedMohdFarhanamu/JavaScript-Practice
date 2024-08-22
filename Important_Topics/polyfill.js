@@ -1,6 +1,6 @@
 // POLYFILL
 // A polyfill is a piece of code (usually JavaScript on the Web) used to provide modern functionality on older browsers that do not 
-natively support it.
+   natively support it.
 // EXAMPLE :- if my browser does not have "bind()" so we have to write own bind() function.
 // 1st way
 
